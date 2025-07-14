@@ -6,6 +6,14 @@ import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
+
+    const socialcontact = [
+    { Icon: BiLogoGmail, link: "mailto:chingo.swe@gmail.com" },
+    { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/chi-ngo09" },
+    { Icon: IoLogoTwitter, link: "https://twitter.com/chingo09" },
+    { Icon: BsGithub, link: "https://github.com/chingo09" }
+    ];
+  
   return (
     <div className="mt-20" id="home">
       <div className="flex justify-between py-10 items-center px-5 lg:px-28 lg:flex-row flex-col-reverse">
@@ -33,7 +41,7 @@ export default function Home() {
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
               Hello, <TypeAnimation
                 sequence={[
-                  'I am Sathish Kumar',
+                  'I am Chi Ngo',
                   1000,
                   // 'I am a Web Developer',
                   // 1000,
@@ -60,12 +68,12 @@ export default function Home() {
           </motion.div>
 
           <motion.p
-            className="text-[#71717A] text-sm lg:text-base mt-5"
+            className="text-[#71717A] text-lg mt-5 font-medium"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Passionate about technology, I specialize in Web Development and Web Designing. I’m focused on building innovative solutions and continuously expanding my skills. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
+          "Coding to create, learning to grow, and building to help people"—that’s at the heart of my journey in tech.
           </motion.p>
 
           <motion.div
@@ -74,10 +82,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
+            {socialcontact.map(({ Icon, link }, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={link}
                 className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                 whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                 whileTap={{ scale: 0.9 }}

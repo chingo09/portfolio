@@ -10,6 +10,13 @@ export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
+  const socialcontact = [
+  { Icon: BiLogoGmail, link: "mailto:chingo.swe@gmail.com" },
+  { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/chi-ngo09" },
+  { Icon: IoLogoTwitter, link: "https://twitter.com/chingo09" },
+  { Icon: BsGithub, link: "https://github.com/chingo09" }
+  ];
+
   return (
     <motion.div
       ref={ref}
@@ -56,10 +63,10 @@ export default function Contact() {
               </motion.button>
 
               <div className='flex items-center gap-x-2 lg:gap-x-5'>
-                {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
+                {socialcontact.map(({ Icon, link }, index) => (
                   <motion.a
                     key={index}
-                    href="#"
+                    href={link}
                     className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                     whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                     whileTap={{ scale: 0.9 }}
@@ -89,23 +96,23 @@ export default function Contact() {
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="mailto:Youremail@gmail.com"
+              href="mailto:chingo.swe@gmail.com"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-1'>
                 <IoMdMail className="w-4 h-4 lg:w-5 lg:h-5" />
               </span>
-              Youremail@gmail.com
+              chingo.swe@gmail.com
             </motion.a>
 
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="tele:1234567890"
+              href="tel:7657123590"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]'>
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
-              1234567890
+              765 712 3590
             </motion.a>
           </div>
         </motion.div>

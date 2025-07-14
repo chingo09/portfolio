@@ -17,6 +17,8 @@ export default function Skills() {
     { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
     { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
     { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 11, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 12, name: "Figma", icon: <CgFigma size={50} /> },
   ]);
 
   const [experiences] = useState([
@@ -31,6 +33,15 @@ export default function Skills() {
     },
     {
       id: 2,
+      company: "Youtube",
+      role: "Software Engineer",
+      period: "Jan 2017 - Oct 2019",
+      description:
+        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+      logo: "/assets/youtube.svg",
+    },
+    {
+      id: 3,
       company: "Youtube",
       role: "Software Engineer",
       period: "Jan 2017 - Oct 2019",

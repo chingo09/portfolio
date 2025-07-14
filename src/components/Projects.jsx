@@ -16,6 +16,20 @@ const projects = [
     description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
     image: "/assets/project1.png",
     link: "#"
+  },
+  {
+    id: 3,
+    title: "Stock Market Dashboard",
+    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
+    image: "/assets/project1.png",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Stock Market Dashboard",
+    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
+    image: "/assets/project1.png",
+    link: "#"
   }
 ];
 
