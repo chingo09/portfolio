@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
@@ -10,7 +10,6 @@ export default function Home() {
     const socialcontact = [
     { Icon: BiLogoGmail, link: "mailto:chingo.swe@gmail.com" },
     { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/chi-ngo09" },
-    { Icon: IoLogoTwitter, link: "https://twitter.com/chingo09" },
     { Icon: BsGithub, link: "https://github.com/chingo09" }
     ];
   
@@ -43,9 +42,7 @@ export default function Home() {
                 sequence={[
                   'I am Chi Ngo',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
+                  // 'I am a Fullstack Developer',
                   // 1000,
                 ]}
                 speed={10}

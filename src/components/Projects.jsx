@@ -5,32 +5,28 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
-    description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
-    image: "/assets/project1.png",
-    link: "#"
+    title: "Putco - Discover what’s nearby in seconds",
+    description: "Putco is a web platform for visitors and residents to discover local shops, services, and places in Putnam County using smart search and interactive maps. It also connects users through the PutMedia community, where they can share and explore local experiences.",
+    techstack: "Built with React.js, Node.js, MongoDB geospatial queries, Google Places API, Cloudinary, Vite, and Redis caching.",
+    image: "/assets/Putco.png",
+    link: "https://github.com/chingo09/Putco"
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
+    title: "FinSavvy - Track it. Save it. Relax. Budgeting made easy",
+    description: "FinSavvy is a personal finance platform that helps users track spending, plan savings, and get smart budgeting tips powered by GPT and real-time banking data through Plaid.",
+    techstack: "Built with React.js, Chart.js, Node.js, MongoDB, Plaid API and OpenAI API. Automated deployments with Docker and GitHub Actions, hosted on AWS EC2",
     image: "/assets/project1.png",
-    link: "#"
+    link: "https://github.com/PhuocOng/FinSavvy"
   },
   {
     id: 3,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
+    title: "GoldandGo - No more group chats—just a few clicks to ride together",
+    description: "Gold and Go is a campus ride-sharing platform for DePauw students, making it easy to find rides, offer seats, and coordinate trips through matching system, real-time messaging and interactive maps.",
+    techstack: "Built with React.js, Node.js, Express, PostgreSQL (PostGIS), Socket.io, Redis, and Firebase Cloud Messaging. Automated deployments with Docker and GitHub Actions, hosted on Heroku.",
     image: "/assets/project1.png",
-    link: "#"
+    link: "https://github.com/chingo09/GoldandGo"
   },
-  {
-    id: 4,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-    image: "/assets/project1.png",
-    link: "#"
-  }
 ];
 
 export default function Projects() {
@@ -64,8 +60,11 @@ export default function Projects() {
               </h2>
               <p className="font-bold text-white text-xl lg:text-3xl">{project.title}</p>
 
-              <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
+              <p className="text-sm/6 lg:text-base text-[#D4D4D8]">
                 {project.description}
+              </p>
+              <p className="font-light text-sm/6 lg:text-base text-[#D4D4D8]">
+                {project.techstack}
               </p>
               <a href={project.link} className="text-white mt-3 block" target="_blank" rel="noopener noreferrer">
                 <TbExternalLink size={23} />

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { BiLogoGmail } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
-import { IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
+import { IoLogoLinkedin } from 'react-icons/io5';
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 
@@ -13,7 +13,6 @@ export default function Contact() {
   const socialcontact = [
   { Icon: BiLogoGmail, link: "mailto:chingo.swe@gmail.com" },
   { Icon: IoLogoLinkedin, link: "https://www.linkedin.com/in/chi-ngo09" },
-  { Icon: IoLogoTwitter, link: "https://twitter.com/chingo09" },
   { Icon: BsGithub, link: "https://github.com/chingo09" }
   ];
 
