@@ -42,7 +42,7 @@ export default function Home() {
                 sequence={[
                   'I am Chi Ngo',
                   1000,
-                  // 'I am a Fullstack Developer',
+                  // 'I am a Computer Science Student',
                   // 1000,
                 ]}
                 speed={10}
@@ -51,16 +51,16 @@ export default function Home() {
               />
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="font-extrabold">Fullstack</span>{" "}
+              <span className="font-extrabold">Computer Science</span>{" "}
               <span
                 className="text-white font-extrabold"
                 style={{ WebkitTextStroke: "1px black" }}
               >
-                Developer
+                Student
               </span>
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">India.</span>
+              Based In <span className="font-extrabold">Greencastle, Indiana.</span>
             </motion.h2>
           </motion.div>
 

@@ -22,22 +22,31 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "DePaw University",
+      role: "Research Assistant",
+      period: "Apr 2025 - June 2025",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        " Built a retrieval-augmented Q&A chatbot for DePauw CS courses using LangChain, FAISS, and Llama-3, supporting over 100 students per semester. Developed a pipeline with Spark and AWS Textract to extract, clean, and convert text from 50+ lecture PDFs into vector embeddings for search.",
+      logo: "/assets/depauw.svg",
     },
     {
       id: 2,
-      company: "YouTube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "Orion Bank",
+      role: "Software Engineer Intern",
+      period: "May 2024 - Aug 2024",
       description:
-        "Focused on backend systems for large-scale data processing and user engagement features, ensuring seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "Built a customer dashboard in React.js with Redux Toolkit, using useMemo and memoized selectors to optimize frontend performance. Developed OAuth2 authentication and role-based access control with Auth0 and React Router v6. Built RESTful microservices in Go with PostgreSQL, optimized for high-volume transactional workloads and low-latency responses.",
+      logo: "/assets/orionbank.svg",
     },
+    {
+      id: 3,
+      company: "AetherMind AI",
+      role: "Software Engineer Intern",
+      period: "Jan 2024 - May 2024",
+      description:
+        "Containerized AI inference services using Docker and Kubernetes (EKS), with automated deployments via Helm. Integrated Prometheus and Grafana to monitor system metrics, reducing incident response time by 35%. Built a CI/CD pipeline with GitHub Actions, including Docker image scanning and infrastructure linting for secure deployments.",
+      logo: "/assets/aethermindai.svg",
+    }
   ]);
 
   const [education] = useState([
