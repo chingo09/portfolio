@@ -11,7 +11,7 @@ export default function About() {
         transition={{ type: "spring", stiffness: 80, damping: 10 }}
         viewport={{ once: true }}
       >
-        <img src="/assets/about-me.svg" alt="About Me Illustration" />
+        <img src="/assets/aboutme.png" alt="About Me Illustration" />
       </motion.div>
 
       <motion.div
@@ -26,15 +26,15 @@ export default function About() {
         </h2>
 
         <p className="font-light text-[#D4D4D8] text-sm/6 lg:text-base mt-5 lg:mt-10">
-          I'm a passionate full-stack developer specializing in **React.js & Node.js**. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
+          I’m a Computer Science student at DePauw University, graduating in 2027. I’m passionate about software engineering because it lets me build things that help people—whether that’s building something innovative or just creating simple tools that make life easier.
         </p>
 
         <p className="font-light text-[#D4D4D8] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          My web development journey started in **2015**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, NestJS, TailwindCSS, Supabase, and more**.
+          I enjoy learning by doing and love taking on new projects that push me beyond my comfort zone. Right now, I’m focused on expanding my skills in full-stack development and developing AI-powered applications.
         </p>
 
         <p className="font-light text-[#D4D4D8] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Beyond coding, I enjoy sharing insights on **Twitter**, engaging with **Indie Hackers**, and following the journey of **early-stage startups**. Feel free to follow me on **Twitter** or check out my projects on **GitHub**.
+          When I’m not coding, you’ll often find me learning about criminal psychology, sketching in my notebook, or tending to plants—small things that help me unwind and recharge.
         </p>
       </motion.div>
     </div>
